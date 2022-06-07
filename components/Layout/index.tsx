@@ -1,6 +1,6 @@
 import React from 'react';
-import AppNavbar from '../../shared/AppNavbar';
-
+import Header from '../Header';
+import Container from '../Container/indet';
 interface ILayout {
   children: React.ReactNode;
 }
@@ -8,8 +8,10 @@ interface ILayout {
 const Layout = ({ children }: ILayout) => {
   return (
     <div>
-      <AppNavbar />
-      { children }
+      <Header />
+      <Container>
+        { children }
+      </Container>
     </div>
   )
 };
